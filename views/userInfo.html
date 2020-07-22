@@ -1,0 +1,87 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>用户信息页面</title>
+  <link rel='stylesheet' href='/stylesheets/userinfo.css' />
+  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+</head>
+
+<body>
+  
+
+  <div class="search">
+    <%if(data[0].roleid == 1){%>
+      <form method="post" action="/api/users/registerinfo">
+        用户ID：<input type="text" class="userid" name="userid">
+        用户名：<input type="text" name="username">
+        密码：<input type="text" value="123" readonly name="password" style="width: 50px;">
+        <input type="submit" value="新增用户">
+      </form>
+      <br>
+      搜索用户：<input name="info" type="text" onkeydown="onSearch(this)" placeholder="请输入关键字">
+        
+    <%}%>
+    <%if(data[0].roleid == 2){%>
+      <form method="post" action="/api/seller/sregisterinfo">
+        用户ID：<input type="text" class="userid" name="userid">
+        用户名：<input type="text" name="username">
+        密码：<input type="text"readonly value="123" name="password" style="width: 50px;">
+        <br>
+        店铺名称：<input type="text" name="storename">
+        店铺电话：<input type="text" name="storephone">
+        店铺地址：<input type="text" name="storeadd">
+        <input type="submit" id="search" value="新增商家">
+      </form>
+      <br>
+      搜索商家：<input name="info" type="text" onkeydown="onSearch(this)" placeholder="请输入关键字">
+    <%}%>
+  </div>
+
+  <table id="userlist">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>用户ID</th>
+        <th>姓名</th>
+        <th>删除</th>
+        <th>成为管理员</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%for(i=0;i<data.length;i++){%>
+      <tr>
+        <td><%=data[i].id%></td>
+        <td><%=data[i].userid%></td>
+        <td><%=data[i].username%></td>
+        <td><a href="/users/delete/<%=data[i].userid%>" class="btn">删除</a></td>
+        <td><a href="/users/setadmin/<%=data[i].userid%>" class="btn">admin</a></td>
+      </tr>
+      <%}%>
+        </tbody>
+    </table>
+</div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  function onSearch(obj){//js函数开始
+    setTimeout(function(){//因为是即时查询，需要用setTimeout进行延迟，让值写入到input内，再读取
+      var table = document.getElementById('userlist');//获取table的id标识
+      var rowsLength = table.rows.length;//表格总共有多少行
+      var key = obj.value;//获取输入框的值
+      var colLength = table.rows.item(0).cells.length-3;//要搜索的哪一列，这里是第一列，从0开始数起
+      for(var i=1;i<rowsLength;i++){//按表的行数进行循环，本例第一行是标题，所以i=1，从第二行开始筛选（从0数起）
+        for(var j=0;j<=colLength;j++){
+          var searchText = table.rows[i].cells[j].innerHTML;//取得table行，列的值
+          if(searchText.match(key)){//用match函数进行筛选，如果input的值，即变量 key的值为空，返回的是ture，
+            table.rows[i].style.display='';//显示行操作，
+          }else{
+            table.rows[i].style.display='none';//隐藏行操作
+          }
+        }
+        
+      }
+    },200);//200为延时时间
+  }
+</script>

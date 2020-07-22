@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="info">
+        <table class="orderlist">
+            <thead>
+                <tr>
+                    <th>商品名称</th>
+                    <th>下单数量</th>
+                    <th>收货地址</th>
+                    <th>联系电话</th>
+                    <th>店铺ID</th>
+                    <th>用户ID</th>
+                    <th>支付状态</th>
+                    <th>订单编号</th>
+                </tr>
+            </thead>
+            <tbody>
+                <%for(i=0;i<orders.length;i++){%>
+                <tr>
+                    <td><%=orders[i].foodname%></td>
+                    <td><%=orders[i].ordernum%></td>
+                    <td><%=orders[i].address%></td>
+                    <td><%=orders[i].conphone%></td>
+                    <td><%=orders[i].storeid%></td>
+                    <td><%=orders[i].userid%></td>
+                    <%if(orders[i].payed==0){%>
+                        <td>待支付</td>
+                    <%}%>
+                    <%if(orders[i].payed==1){%>
+                        <td>已支付</td>
+                    <%}%>
+                    <%if(orders[i].payed==-1){%>
+                        <td>取消</td>
+                    <%}%>
+                    <td><%=orders[i].orderid%></td>
+                </tr>
+                <%}%>
+                </tbody>
+            </table>
+    </div>
+</body>
+</html>
+
+<style>
+    .info{
+        position: relative;
+        top: 130px;
+    }
+    .orderlist{
+        text-align: center;
+    }
+    th,td,tr{
+        border-bottom: 1px solid green;
+        border-right: 1px solid green;
+    }
+</style>

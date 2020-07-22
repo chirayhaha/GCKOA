@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="info">
+        <table class="orderlist">
+            <thead>
+                <tr>
+                    <th>用户ID</th>
+                    <th>食谱标题</th>
+                    <th>食谱材料</th>
+                    <th>食谱做法</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <%for(i=0;i<books.length;i++){%>
+                <tr>
+                    <td><%=books[i].userid%></td>
+                    <td><%=books[i].title%></td>
+                    <td><%=books[i].context%></td>
+                    <td><%=books[i].making%></td>
+                    <td><a href="/users/delbooks/<%=books[i].id%>">删除</a></td>
+                </tr>
+                <%}%>
+                </tbody>
+            </table>
+    </div>
+</body>
+</html>
+
+<style>
+    .info{
+        position: relative;
+        top: 130px;
+    }
+    .orderlist{
+        text-align: center;
+    }
+    th,td,tr{
+        border-bottom: 1px solid green;
+        border-right: 1px solid green;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(0, 255, 0);
+        font-weight: bolder;
+    }
+</style>

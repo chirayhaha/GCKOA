@@ -1,0 +1,47 @@
+[2020-04-27T08:22:25.267] [INFO] response - { method: 'GET',
+  url: '/api/users/readcookbook',
+  body: {},
+  costTime: 228,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Array] } } }
+[2020-04-27T08:22:45.028] [INFO] response - { method: 'GET',
+  url: '/api/users/readcookbook',
+  body: {},
+  costTime: 169,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Array] } } }
+[2020-04-27T08:23:40.144] [INFO] response - { method: 'GET',
+  url: '/api/users/logout',
+  body: {},
+  costTime: 108,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1776' },
+     body:
+      '<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n    <link rel="stylesheet" href=\'/stylesheets/login.css\'>\r\n    <title>登录</title>\r\n</head>\r\n<body>\r\n    <div class="header" id="head">\r\n      <div class="title">登录Login</div>\r\n    </div>\r\n          \r\n    <div class="wrap" id="wrap">\r\n        <div class="logGet">\r\n                <!-- 头部提示信息 -->\r\n                <div class="logD logDtip">\r\n                  <p class="p1">登录</p>\r\n                  <a href="/register">注册</a>\r\n                </div>\r\n                <form action="/checklogin" method="POST">\r\n                  <!-- 输入框 -->\r\n                  <div class="lgD">\r\n                      <input type="text" name="userid"\r\n                          placeholder="输入id" />\r\n                  </div>\r\n                  <div class="lgD">\r\n                      <input type="password" name="password"\r\n                          placeholder="输入用户密码" />\r\n                  </div>\r\n                  <div class="logC">\r\n                      <button type="submit">登 录</button>\r\n                  </div>\r\n                  <br>\r\n                </form>\r\n            </div>\r\n      </div>\r\n      <div class="footer" id="foot">\r\n        <div class="copyright">\r\n          <p>Copyright © 2020 陈芷芮 Inc. All Rights Reserved.</p>\r\n          <div class="img">\r\n            <span>联系邮箱：.........</span>\r\n          </div>\r\n          \r\n          <div class="img">\r\n            <span>联系地址：...........</span>\r\n          </div>\r\n            \r\n          <div class="img">\r\n            <span>联系电话：..........</span>\r\n          </div>\r\n        </div>\r\n          \r\n      </div>\r\n</body>\r\n</html>' } }

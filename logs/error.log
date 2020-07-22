@@ -1,0 +1,123 @@
+[2020-04-24T13:16:21.235] [ERROR] error - { method: 'GET',
+  url: '/users/ordersmanage',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "userid" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-04-24T13:16:22.767] [ERROR] error - { method: 'GET',
+  url: '/users/ordersmanage',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "userid" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-04-24T13:17:35.919] [ERROR] error - { method: 'GET',
+  url: '/users/ordersmanage',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "userid" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-04-26T12:46:42.768] [ERROR] error - { method: 'POST',
+  url: '/api/users/cancelorder',
+  body:
+   { orderid: '2222020042612462848',
+     userid: '17406242222',
+     ordernum: 5 },
+  costTime: undefined,
+  err:
+   ReferenceError: goodid is not defined
+       at orderlist.update.then.res (C:\Users\chiray\Desktop\大三下\gc\gckoa\service\user_dao.js:299:24)
+       at tryCatcher (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-04-26T12:48:42.099] [ERROR] error - { method: 'POST',
+  url: '/api/users/cancelorder',
+  body:
+   { orderid: '2222020042612483072',
+     userid: '17406242222',
+     ordernum: 4,
+     goodid: 1 },
+  costTime: undefined,
+  err:
+   ReferenceError: goodid is not defined
+       at orderlist.update.then.res (C:\Users\chiray\Desktop\大三下\gc\gckoa\service\user_dao.js:299:24)
+       at tryCatcher (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\chiray\Desktop\大三下\gc\gckoa\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }

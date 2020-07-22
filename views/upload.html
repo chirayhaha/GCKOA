@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>逛吃</title>
+</head>
+
+<body>
+    <div class="upload">
+        <form action="/users/uploadbook/<%=userInfo.userid%>" method="POST">
+            <div>标题：</div>
+            <input type="text" style="width: 655px;" name="title" placeholder="输入标题">
+            <div>食材：</div>
+            <textarea rows="2" cols="100" name="context" placeholder="输入食材"></textarea>
+            <div>做法：</div>
+            <textarea rows="27" cols="100" name="making" placeholder="输入内容"></textarea>
+            <div><button type="submit" class="btn">上传</button></div>
+        </form>
+    </div>
+
+</body>
+
+</html>
+<script>
+</script>
+
+
+<style>
+    .upload{
+        position: absolute;
+        left: 10%;
+        top: 15%;
+    }
+    .btn{
+        position: relative;
+        left: 82%;
+        margin-top: 10px;
+        width: 100px;
+        height: 30px;
+    }
+</style>

@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.form{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.search{
+    position: relative;
+    top: 100px;
+    left: 20px;
+}
+#userlist{
+    border-collapse: collapse;
+    width: 640px;
+    position: absolute;
+    top: 220px;
+    left: 20px;
+}
+
+th,td,tr{
+    /* border: 1px solid black; */
+    padding-left: 90px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    border-bottom: 1px solid green;
+}
+.btn{
+    display: block;
+    text-decoration: none;
+    background-color: #556b56;
+    border-radius: 3px;
+    color: white;
+    font-size: 15px;
+    height: 30px;
+    width: 90%;
+    text-align: center;
+    line-height: 30px;
+    overflow: hidden;
+}
+.back{
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    top:50px;
+    color: white;
+}
+
+.header{
+    background-color: #556b56;
+    height: 73px;
+    text-align: center;
+    width: 100%;
+  }
+  .header p{
+    color: white;
+    font-size: 25px;
+    font-family: "宋体";
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* 使用css3的transform来实现 */
+    height: 40px;
+    width: 30%;
+}
+
+.info{
+    float: left;
+}
+
+.footer {
+    background-color: #556b56;
+    position: absolute;
+    top:100%;
+    width: 100%;
+    color: white;
+}
+.copyright{
+    padding: 8px;
+}
+.copyright .txt,p {
+    width: 100%;
+    height: 24px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav{
+    background-color: #8eb495;
+    width: 15%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    color: white;
+}
+.navbar{
+    width: 100%;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 0.3em;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: #a2dfa5;
+}
+.manage{
+    color: white;
+    font-weight: bold;
+}.active{
+    width: 100%;
+    background-color: #556b56;
+    color: white;
+}
+.userlist{
+    position: relative;
+    left: 3%;
+}
+
+.logout{
+    margin: 0;
+    color: black;
+    position: absolute;
+    right: 5px;
+    top: 7%;
+    font-size: 15px;
+    color: #8eb495;
+}
+.pagination pull-right{
+    position: absolute;
+    top: 400px;
+}
